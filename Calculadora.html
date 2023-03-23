@@ -4,22 +4,50 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <!-- FONTS -->
         <link rel="stylesheet" href="Calculadora.css">
-        <title>CALCULADORA</title>
+        <title>CALCULATOR</title>
     </head>
     <body>
-        <section class="calculadora">
-            <h1>CALCULADORA CHIMBITA</h1>
-            <input type="number" id="valor1" placeholder="Ingrese su primer digito">
-            <input type="number" id="valor2" placeholder="Ingrese su segundo digito">
-            <button type="submit" id="botonCalculo">Realize la operación</button>
-            <p id="result"></p>
-        </section>
-        <section class="refresh">
-            <form action="?">
-                <button>Reiniciar calculadora</button>
-            </form>
-        </section>
+        <main>
+            <section class="calculator-body">
+                <div class="board-calculator">
+                    <span class="board"></span>
+                </div>
+                <div class="keyboard-calculator">
+                    <div class="number-keyboard">
+                        <button class="key-number" id="nine">9</button>
+                        <button class="key-number" id="eight">8</button>
+                        <button class="key-number" id="seven">7</button>
+                        <button class="key-number" id="six">6</button>
+                        <button class="key-number" id="five">5</button>
+                        <button class="key-number" id="four">4</button>
+                        <button class="key-number" id="three">3</button>
+                        <button class="key-number" id="two">2</button>
+                        <button class="key-number" id="one">1</button>
+                        <button class="key-number" id="point">.</button>
+                        <button class="key-number" id="zero">0</button>
+                        <button class="key-number" id="comma">,</button>
+                    </div>
+                    <div class="operators-keyboard">
+                        <button class="key-operator" id="plus">+</button>
+                        <button class="key-operator" id="subtract">-</button>
+                        <button class="key-operator" id="division">/</button>
+                        <button class="key-operator" id="multiplication">*</button>
+                    </div>
+                </div>
+                <div class="result-calculator">
+                    <button class="result" id="equal">=</button>
+                </div>
+            </section>
+            <a href="./Calculadora.html" class="reset">
+                <button type="submit">Reboot Calculator</button>
+            </a>
+        </main>
     </body>
     <script src="./Calculadora.js"></script>
 </html>
